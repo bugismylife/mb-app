@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+{% block title %}
+    List Page    
+{% endblock title %}
+
+{% block content %}
+<h1>List Page</h1>
+<ul>    
+{% for post in posts %}
+<li>{{ post.text }} --- {{post.created_date}}</li>
+{% endfor %}
+</ul>
+{% endblock content %}

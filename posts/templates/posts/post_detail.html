@@ -1,0 +1,9 @@
+{% extends 'home.html' %}
+{% block title %}
+    Detail Page    
+{% endblock title %}
+
+{% block content %}
+<h1>Detail Page</h1>
+<div>{{ post.text }} --- {{post.created_date}}</div>
+{% endblock content %}
